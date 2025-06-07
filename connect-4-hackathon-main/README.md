@@ -1,52 +1,21 @@
-# Deep Q-Learning AI with PyTorch
+# Connect4 Reinforcement Learning Agent
 
-This project was built during a hackathon as an exploration into reinforcement learning and neural networks. I implemented a Deep Q-Learning (DQN) agent using PyTorch to better understand how AI can learn to make decisions over time through trial and error.
+This is a hackathon project where I trained a reinforcement learning agent to play Connect4 using Deep Q-Learning. I used PyTorch for the neural network and Gymnasium to build the environment.
 
----
-
-## Motivation
-
-As a second-semester electrical engineering student, I’ve been exploring neural networks and reinforcement learning out of personal interest. I wanted to apply concepts I’ve learned from videos (like 3Blue1Brown's series on neural networks) and research papers, including:
-
-- **Backpropagation**
-- **Cost functions**
-- **Q-learning fundamentals**
-- **Exploration vs exploitation trade-offs**
-
-Even though I didn’t implement everything from scratch, this project helped me see how these theories translate into real models. PyTorch handled a lot of the low-level operations (like autograd and tensor updates), but working with it gave me a clearer picture of how those internals work in practice.
-
----
-
-## What the AI Does
-
-The agent learns from its environment using rewards and penalties. It tries to maximize future rewards by:
-
-- Approximating the Q-value function with a neural network
-- Using experience replay for better sample efficiency
-- Gradually shifting from exploration to exploitation (epsilon-greedy strategy)
-
----
-
-## Tech Stack
-
-- Python 3
-- PyTorch
-- NumPy
-
----
+The goal was to apply core concepts like Q-learning, cost functions, and backpropagation, which I learned from resources like 3Blue1Brown and research papers. While PyTorch handled most low-level details, working with it helped me understand the logic behind those operations.
 
 ## Files
 
-- `train.py` – main training loop  
-- `dqn_agent.py` – agent class and logic  
-- `model.py` – PyTorch neural network  
-- `environment.py` – simplified or Gym-compatible environment  
+- `connect4_rl_task.ipynb`: main training notebook
+- `rl_task.py`: training logic
+- `play_against_random.py`: test against a random agent
+- `play_against_rl.py`: test RL vs RL
+- `dqn_policy_net.pth`: trained model
+- `setup.py`: helper code
+- `gym_env/`: environment folder
 
----
+## Requirements
 
-## How to Run
-
-Make sure you have Python and PyTorch installed, then:
-
+Install dependencies:
 ```bash
-python train.py
+pip install -r requirements.txt
