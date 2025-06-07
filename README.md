@@ -7,9 +7,9 @@ The goal was to apply core concepts like Q-learning, cost functions, and backpro
 ## Files
 
 - `connect4_rl_task.ipynb`: main training notebook
-- `rl_task.py`: training logic
-- `play_against_random.py`: test against a random agent
-- `play_against_rl.py`: test RL vs RL
+- `rl_task.py`: dqn agent class - neural network structure
+- `play_against_random.py`: player vs random agent
+- `play_against_rl.py`: player vs rl
 - `dqn_policy_net.pth`: trained model
 - `setup.py`: helper code
 - `gym_env/`: environment folder
